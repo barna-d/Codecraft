@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle, #000000, #792CD4);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    position:relative;
+}
+
+.logo {
+    
+    width: 80px;
+    height: 45px;
+    top: 36px;
+    left: 41px;
+}
+
+
+.inline-container {
+    text-align: center; 
+}
+
+.inline-container .left-text,
+.inline-container .right-text,
+.inline-container .center-image {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.left-text, .right-text {
+    font-size: 4em;
+    color:white;
+    margin: 0 -125px; 
+    position:relative;
+    top: -300px;
+    font-family: "Keania One", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 141px;
+    line-height: 171.6px;
+    text-align: left;
+}
+
+.center-image {
+    max-width: 150px; 
+    height: auto;
+    display: inline-block;
+    max-width: 100%;  
+    margin-top:-100px;
+}
+
+
+/* NAV-BAR */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #792CD4; 
+    transform: scale(1.2); 
+    border-bottom: 2px solid grey; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 4); 
+    transform: translateY(-2px); 
+}
+
+.register-btn {
+    padding: 10px 20px;
+    background-color: #792CD4;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: white; 
+    color:#792CD4;
+    transform: scale(1.05);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 350px;
+    color: #fff;
+    margin-top:-300px;
+    }
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+
+.hero-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+
+
+
+
+.hero-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-access-btn {
+    background-color: #792CD4;
+    color: #fff;
+    padding:10px 20px ;
+    font-family: "Space Grotesk";
+ font-size: 22px;
+font-weight: 400;
+line-height: 28.07px;
+text-align: left;
+
+}
+
+.vacancies-btn {
+    
+
+    outline: 2px solid #792CD4; 
+    padding: 10px 20px;       
+    background-color: black;  
+    color: #792CD4;          
+    font-size: 22px;          
+    font-weight: 400;
+    line-height: 28.07px;
+    border-radius: 5px;
+    font-family: "Space Grotesk";
+    
+}
+
+
+/* STATUS-BOX */
+.status-box {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #000428, #792CD4); /* Another gradient background */
+    
+    color: #fff;
+    width: 200px; /* Adjust width as needed */
+    order: 2;
+}
+
+.status-box .title {
+    font-size: 24px;
+    font-family: 'Arial Black', sans-serif;
+    margin: 0;
+}
+
+.status-box .status {
+    font-size: 16px;
+    margin: 0;
+    color: #c0c0c0;
+}
+
+.status-box .percentage {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+
+
+.container-custom {
+    padding: 50px 0;
+}
+
+.text-section {
+    padding-right: 30px; 
+}
+.text-section h1 {
+    font-weight: bold;
+    font-family:"Space Grotesk", sans-serif;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 100.5px;
+    text-align: left;
+
+}
+
+.text-section h2{
+    font-family:"Space Grotesk", sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 56.14px;
+    text-align: left;
+}
+.text-section p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+.image-section .row > div {
+    padding: 10px;
+}
+
+
+/* GAMES */
+.games {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.games h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game-item {
+    
+    width: 200px;
+    height: 300px;
+    background-color: #1f1f1f;
+}
+
+.game-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.game-item img:hover {
+    transform: scale(1.05);
+}
+
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact form input, 
+.contact form textarea {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #792CD4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.contact form button:hover {
+    background-color: white; /* Change background color on hover */
+    color:#792CD4; /* Optional: Change text color on hover */
+    transform: scale(1.05);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1f1f1f;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #792CD4;
+    width: 1280px;
+    height: 54px;
+    top: 3186px;
+}
